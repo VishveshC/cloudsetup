@@ -1,1 +1,1 @@
-A generic script to install qBittorrent/Peerflix-server/Transmission onto a Cloudcluster VM
+A generic script to install qBittorrent onto a NodeJSCluster Cloudcluster VM using hacky wayarounds
