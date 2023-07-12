@@ -1,16 +1,16 @@
-apt update
-apt upgrade -y
-apt install -y qbittorrent-nox
-apt install -y nginx
+apt-get update
+apt-get upgrade -y
+apt-get install -y qbittorrent-nox
+apt-get install -y nginx
+apt-get install -y screen
 npm install --global http-server
-rm /etc/nginx/sites-available/default
-curl -o /etc/nginx/sites-available/default https://raw.githubusercontent.com/VishveshC/cloudsetup/master/default
+supervisorctl stop all
+rm /cloudclusters/config/nginx/default.conf
+curl -o /cloudclusters/config/nginx/default.conf https://raw.githubusercontent.com/VishveshC/cloudsetup/master/default.conf
 nginx -t
 service start nginx
-pm2 stop 0
-pm2 delete 0
 curl -o /root/.config/qBittorrent/qBittorrent.conf https://raw.githubusercontent.com/VishveshC/cloudsetup/master/qBittorrent.conf
-pm2 start "http-server /cloudclusters/Download -p 6969 -a 127.0.0.1"
-pm2 start "qbittorrent-nox"
-pm2 save --force
+screen -S http
+screen -S http -dm "http-server /cloudclusters/Download -p 6969 -a 127.0.0.1"
+qbittorrent-nox
 curl -s "https://api.telegram.org/bot6374163490:AAEpRNt8_ymZylHd0aBUtSSZgSHOLvbUVes/sendMessage?chat_id=1497506203&text=Setup%20finished.%0AWebsite:%20http://$(echo "$HOSTNAME" | sed 's/\(-runtimes\).*//')-0.cloudclusters.net"
