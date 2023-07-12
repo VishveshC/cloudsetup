@@ -4,7 +4,7 @@ server {
     server_name nodejsclusters-135289-0.cloudclusters.net;
 
     location / {
-        proxy_pass http://127.0.0.1:6969;
+        proxy_pass http://127.0.0.1:6970;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -12,7 +12,7 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
     location /down {
-        proxy_pass http://127.0.0.1:6970;
+        proxy_pass http://127.0.0.1:6969;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
