@@ -5,9 +5,9 @@ apt-get install -y nginx
 apt-get install -y screen
 npm install --global http-server
 supervisorctl stop all
+rm /root/.config/qBittorrent/qBittorrent.conf
 curl -o /root/.config/qBittorrent/qBittorrent.conf https://raw.githubusercontent.com/VishveshC/cloudsetup/master/qBittorrent.conf
-screen -S http
-screen -S http -dm "http-server /cloudclusters/Download -p 6969 -a 127.0.0.1"
+screen -S http -d -m "http-server /cloudclusters/Download -p 6969 -a 127.0.0.1"
 qbittorrent-nox
 rm /cloudclusters/config/nginx/default.conf
 curl -o /cloudclusters/config/nginx/default.conf https://raw.githubusercontent.com/VishveshC/cloudsetup/master/default.conf
