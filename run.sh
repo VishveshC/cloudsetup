@@ -9,9 +9,9 @@ npm install --global http-server
 supervisorctl stop all
 rm /root/.config/qBittorrent/qBittorrent.conf
 curl -o /cloudclusters/zipfolder.sh https://raw.githubusercontent.com/VishveshC/cloudsetup/master/zipfolder.sh && chmod +x /cloudclusters/zipfolder.sh
-screen -d -m http-server /cloudclusters -p 6969 -a 127.0.0.1
-screen -d -m bash -c 'yes | qbittorrent-nox'
 curl -o /root/.config/qBittorrent/qBittorrent.conf https://raw.githubusercontent.com/VishveshC/cloudsetup/master/qBittorrent.conf
+screen -d -m http-server /cloudclusters -p 6969 -a 127.0.0.1
+qbittorrent-nox -d
 rm /cloudclusters/config/nginx/default.conf
 curl -o /cloudclusters/config/nginx/default.conf https://raw.githubusercontent.com/VishveshC/cloudsetup/master/default.conf
 nginx -t
