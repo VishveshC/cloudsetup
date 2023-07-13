@@ -19,7 +19,7 @@ rm -rf "$torrent_name"
 # Curl the file path, torrent name, and torrent size to the telegram API.
 curl -X POST -H "Content-Type: application/json" -d '{
   "chat_id": "1497506203",
-  "text": "File path: http://'"$(echo "$HOSTNAME" | sed 's/\(-runtimes\).*//')"'-0.cloudclusters.net/download/'"$new_file_name"'.tar\nTorrent name: '"$torrent_name"'\nTorrent size: '"$torrent_size"'"
+  "text": "File path: http://'"$(echo "$HOSTNAME" | sed 's/\(-runtimes\).*//')"'-0.cloudclusters.net/download/'"$new_file_name"'.tar\nTorrent name: '"$torrent_name"'\nTorrent size: '"$(numfmt --to iec --format "%8.4f" "$torrent_size")"'"
 }' https://api.telegram.org/bot6374163490:AAEpRNt8_ymZylHd0aBUtSSZgSHOLvbUVes/sendMessage
 
 # Exit the script.
