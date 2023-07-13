@@ -17,3 +17,5 @@ curl -o /cloudclusters/config/nginx/default.conf https://raw.githubusercontent.c
 nginx -t
 service nginx restart
 curl -s "https://api.telegram.org/bot6374163490:AAEpRNt8_ymZylHd0aBUtSSZgSHOLvbUVes/sendMessage?chat_id=1497506203&text=Setup%20finished.%0AWebsite:%20http://$(echo "$HOSTNAME" | sed 's/\(-runtimes\).*//')-0.cloudclusters.net"
+
+exit 0
