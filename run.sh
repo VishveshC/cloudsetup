@@ -32,6 +32,8 @@ cd /cloudclusters/iQbit/release/public
 sleep 0.5
 cp index.html login.html
 sleep 0.5
+cd /cloudclusters
+sleep 0.5
 qbittorrent-nox -d
 sleep 0.5
 rm /cloudclusters/config/nginx/default.conf
