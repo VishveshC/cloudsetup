@@ -26,6 +26,12 @@ pkill -KILL qbittorrent
 sleep 0.5
 curl -o /root/.config/qBittorrent/qBittorrent.conf https://raw.githubusercontent.com/VishveshC/cloudsetup/master/qBittorrent.conf
 sleep 0.5
+git clone https://github.com/ntoporcov/iQbit.git
+sleep 0.5
+cd /cloudclusters/iQbit/release/public
+sleep 0.5
+cp index.html login.html
+sleep 0.5
 qbittorrent-nox -d
 sleep 0.5
 rm /cloudclusters/config/nginx/default.conf
