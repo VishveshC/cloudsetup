@@ -18,9 +18,11 @@ One click run command (in the `/cloudclusters` directory):
 * Sends main website link and direct download links on telegram (configurable)
 
 ## **Speeds**:
-I personally have not tested maximum upload/download speeds; however if my obersvations are something to refer, maximum down speeds are in the range of 100Mbps (Megabytes/sec) and up speeds are in the range of 10~20Mbps (Megabytes/sec). 
-\nNote that these speeds are in Megabytes/s, not megabits/s. 
-\nThat translates to around a **10 gigabit** download connection! These speeds are however subject to peer availability ofcourse.
+I personally have not tested maximum upload/download speeds; however if my obersvations are something to refer, maximum down speeds are in the range of 100Mbps (Megabytes/sec) and up speeds are in the range of 10~20Mbps (Megabytes/sec).
+
+Note that these speeds are in Megabytes/s, not megabits/s. 
+
+That translates to around a **10 gigabit** download connection! These speeds are however subject to peer availability ofcourse.
 
 ### What is all this?
 > CloudClusters is a VM provider that offers 7-day trial period on their docker images (of which Oracle VM is popular but dosent come with an open port, hence NodeJS Clusters is used here) indefinitely, as far as I know.
