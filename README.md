@@ -29,7 +29,7 @@ That translates to around a **1 gigabit** download connection! These speeds are 
 ### What is all this?
 > CloudClusters is a VM provider that offers 7-day trial period on their docker images (of which Oracle VM is popular but dosent come with an open port, hence NodeJS Clusters is used here) indefinitely, as far as I know.
 > Qbittorrent is a Bittorrent client for downloading torrents, and iQbit makes for a polished UI for both desktop and mobile clients; also features a good search option for `yts.mx`,`1377x.to`,`rarbg` and other popular torrenting sites. (Consult national cyber policies before using)
-> This script essentially makes use of free resources to make a near-Netflix like torrenting site from which you can stream/download your favorite movies/TV shows and even download normal torrents including games without the need of a VPN (like a torrent mirror), with blazing fast download speeds.
+> This script essentially makes use of free resources to make a near-Netflix like torrenting site from which you can stream/download your favorite movies/TV shows and normal torrents including games without the need of a VPN (like a torrent mirror), with blazing fast download speeds.
 
 ### Screenshots:
 ![image](https://github.com/VishveshC/cloudsetup/assets/78300243/eb1322ca-2adc-4677-b8db-01c8557bff46)
@@ -42,4 +42,4 @@ Please raise an issue if a better way to implement something is found.
 
 > *(Might develop a 'proper' script if the repo gets any attention 💀)*
 
-> I am not responsible for any legal action against the use of this script neither for potential account ban; it is a mere personal project/proof of concept.
+> I am not responsible for any legal action against the use of this script nor for potential account ban; it is a mere personal project/proof of concept.
