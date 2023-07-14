@@ -1,6 +1,7 @@
 # CloudSetup.sh
 
 A generic script to install qBittorrent onto a NodeJSCluster Cloudcluster VM using hacky wayarounds.
+**Essentially, a free movie/TV show download mirror with *10 gigabit* download speeds!**
 
 ## **Installation:**
 One click run command (in the `/cloudclusters` directory):
