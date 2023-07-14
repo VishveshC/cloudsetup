@@ -2,6 +2,7 @@ A generic script to install qBittorrent onto a NodeJSCluster Cloudcluster VM usi
 
 **Installation:**
 One click run command (in the /cloudclusters directory):
+
 🔥 ```curl -o run.sh https://raw.githubusercontent.com/VishveshC/cloudsetup/master/run.sh && chmod +x run.sh && ./run.sh```🔥
 
 **Features**:
@@ -18,4 +19,5 @@ One click run command (in the /cloudclusters directory):
 Please raise an issue if a better way to implement something is found.
 
 *(Might develop a 'proper' script if the repo gets any attention 💀)*
+
 I am not responsible for any legal action against the use of this script neither for potential account ban; it is a mere personal project/proof of concept.
