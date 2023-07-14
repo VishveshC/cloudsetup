@@ -2,7 +2,7 @@
 
 A generic script to install qBittorrent onto a NodeJSCluster Cloudcluster VM using hacky wayarounds.
 
-**Essentially, a free movie/TV show download mirror with *10 gigabit* download speeds!**
+**Essentially, a free movie/TV show download mirror with *1 gigabit* download speeds!**
 
 ## **Installation:**
 One click run command (in the `/cloudclusters` directory):
@@ -24,7 +24,7 @@ I personally have not tested maximum upload/download speeds; however if my obers
 
 Note that these speeds are in Megabytes/s, not megabits/s. 
 
-That translates to around a **10 gigabit** download connection! These speeds are however subject to peer availability ofcourse.
+That translates to around a **1 gigabit** download connection! These speeds are however subject to peer availability ofcourse.
 
 ### What is all this?
 > CloudClusters is a VM provider that offers 7-day trial period on their docker images (of which Oracle VM is popular but dosent come with an open port, hence NodeJS Clusters is used here) indefinitely, as far as I know.
