@@ -1,11 +1,12 @@
+#CloudSetup.sh
 A generic script to install qBittorrent onto a NodeJSCluster Cloudcluster VM using hacky wayarounds.
 
-**Installation:**
+##**Installation:**
 One click run command (in the /cloudclusters directory):
 
 🔥 ```curl -o run.sh https://raw.githubusercontent.com/VishveshC/cloudsetup/master/run.sh && chmod +x run.sh && ./run.sh```🔥
 
-**Features**:
+##**Features**:
 * Uses qBittorrent under the hood which is a modified BitTorrent client.
 * Uses iQbit WebUI for qBittorrent by default, which is mobile friendly, and also has a quite good desktop UI.
 * Uses a basic node http-server to expose "download" folder to serve direct download tar files without authentication.
